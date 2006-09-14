@@ -64,9 +64,6 @@ class Structures_Form_Element_Gtk2_SpinButton extends GtkSpinButton implements S
         // Set the value.
         $this->set_value($value);
 
-        // Set the precision.
-        $this->set_digits($digits);
-
         // Set the form object.
         $this->form = $form;
 

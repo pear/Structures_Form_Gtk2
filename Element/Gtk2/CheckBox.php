@@ -248,12 +248,16 @@ class Structures_Form_Element_Gtk2_CheckBox extends GtkCheckButton implements St
     /**
      * Returns the GtkLabel that identifies the element.
      *
+     * Because of the way checkboxes are set up, this method returns ' '. If 
+     * it doesn't the checkbox will have two labels, one to the left and one to
+     * the right.
+     *
      * @access public
      * @return string
      */
     public function getLabel()
     {
-        return $this->get_label();
+        return ' ';
     }
 
     /**
